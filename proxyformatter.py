@@ -1,5 +1,5 @@
 def formatProxies():
-    proxies = [x.strip() for x in open("data/proxies.txt", "r", encoding="utf8").readlines()]
+    proxies = [x.strip() for x in open("data/proxies.txt", "r", encoding="utf-8").readlines()]
     newProxies = []
 
     while len(proxies) > 0:
