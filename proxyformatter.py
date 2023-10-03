@@ -6,7 +6,7 @@ def formatProxies():
         host, port, user, password = proxies.pop().split(":")
         newProxies.append(f"{user}:{password}@{host}:{port}")
 
-    with open("data/proxies.txt", "w", encoding="utf8") as file:
+    with open("data/proxies.txt", "w", encoding="utf-8") as file:
         for proxy in newProxies:
             file.write(f"{str(proxy)}\n")
         file.close()
